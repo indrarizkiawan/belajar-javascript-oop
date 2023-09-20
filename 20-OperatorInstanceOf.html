@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20. Operator Instance of</title>
+  </head>
+  <body>
+    <script>
+      class Employee {}
+      class Manager {}
+
+      const indra = new Employee();
+      const rizkiawan = new Manager();
+
+      console.info(indra instanceof Employee);
+      console.info(indra instanceof Manager);
+      console.info(rizkiawan instanceof Manager);
+      console.info(rizkiawan instanceof Employee);
+    </script>
+  </body>
+</html>
