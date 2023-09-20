@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>21. Static Field</title>
+  </head>
+  <body>
+    <script>
+      class Config {
+        static name = "Belajar Javascript Dasar";
+        static version = 1.0;
+        static author = "Indra Rizkiawan";
+      }
+
+      const person = new Config();
+      console.info(`App Name : ${Config.name}`);
+      console.info(`Ver : ${Config.version}`);
+      console.info(`Author : ${Config.author}`);
+    </script>
+  </body>
+</html>
