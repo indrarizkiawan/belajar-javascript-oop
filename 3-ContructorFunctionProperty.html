@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03. Constructor Function</title>
+  </head>
+  <body>
+    <script>
+      // code
+      // membuat contructor function di awali dengan huruf besar
+      function Person() {
+        // membuat properti
+        this.firstName = "";
+        this.lastName = "";
+      }
+
+      // membuat object dari constructor function
+      const person1 = new Person();
+      person1.firstName = "indra";
+      person1.lastName = "rizkiawan";
+
+      const person2 = new Person();
+      person2.firstName = "popi";
+      person2.lastName = "rizkiawan";
+
+      // cetak ke console.
+      console.log(person1);
+      console.log(person2);
+    </script>
+  </body>
+</html>
