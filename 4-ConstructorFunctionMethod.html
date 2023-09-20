@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4. Constructor Function Method</title>
+  </head>
+  <body>
+    <script>
+      // code
+      function Person() {
+        this.firstName = "";
+        this.lastName = "";
+        this.sayHello = function (name) {
+          console.info(`hello ${name}, my name is ${this.firstName}`);
+        };
+      }
+      const person1 = new Person();
+      person1.firstName = "indra";
+      person1.sayHello("popi");
+    </script>
+  </body>
+</html>
