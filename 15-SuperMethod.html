@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>15. Super Method</title>
+  </head>
+  <body>
+    <script>
+      class Shape {
+        paint() {
+          console.info("Paint shape");
+        }
+      }
+      class Circle extends Shape {
+        paint() {
+          super.paint();
+          console.info("Paint Circle");
+        }
+      }
+
+      const shape = new Shape();
+      shape.paint();
+      console.info(shape);
+
+      const circle = new Circle();
+      circle.paint();
+      console.info(circle);
+    </script>
+  </body>
+</html>
