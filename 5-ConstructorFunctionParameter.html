@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5. Constructor Function Parameter</title>
+  </head>
+  <body>
+    <script>
+      // code
+      function Person(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.sayHello = function (name) {
+          console.info(
+            `hello ${name} my name is ${this.firstName} ${this.lastName}`
+          );
+        };
+      }
+
+      const person1 = new Person("indra", "rizkiawan");
+      person1.sayHello("popi afriani");
+
+      const person2 = new Person("popi", "afriani");
+      person2.sayHello("indra rizkiawan");
+    </script>
+  </body>
+</html>
