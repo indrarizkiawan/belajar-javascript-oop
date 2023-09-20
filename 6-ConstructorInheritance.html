@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6. Constructor Inheritance</title>
+  </head>
+  <body>
+    <script>
+      // code
+      function Employee(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.sayHello = function (name) {
+          console.info(
+            `hello ${name} my name is ${this.firstName} ${this.lastName}`
+          );
+        };
+      }
+
+      function Manager(firstName, lastName) {
+        Employee.call(this, firstName, lastName);
+        this.lastName = lastName;
+      }
+
+      const personEmployee = new Employee("indra", "rizkiawan");
+      console.info(personEmployee);
+
+      const personManager = new Manager("indra", "rizkiawan");
+      console.info(personManager);
+    </script>
+  </body>
+</html>
